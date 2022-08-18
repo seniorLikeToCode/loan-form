@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { TiTick, TiMediaRecord } from "react-icons/ti";
 import { IconContext } from "react-icons";
 
-const TimeLine = () => {
-  const [icon, setIcon] = useState(1);
+const TimeLine = ({ icon, setIcon }) => {
   return (
     <>
       <div className="grid grid-flow-row justify-center content-center grid-cols-2 gap-3 ">
@@ -51,25 +50,25 @@ const TimeLine = () => {
           <div className="mt-32">
             <p className="text-purple-100 mt-1 mb-0">Person details</p>
             <p className="text-purple-50/[.6] text-sm w-10/12">
-              Lorem Ipsum es simplemente el texto de 
+              Lorem Ipsum es simplemente el texto de
             </p>
           </div>
           <div className="mt-7">
             <p className="text-purple-100 mt-1 mb-0">Business details</p>
             <p className="text-purple-50/[.6] text-sm w-10/12">
-              Lorem Ipsum es simplemente el texto de 
+              Lorem Ipsum es simplemente el texto de
             </p>
           </div>
           <div className="mt-8">
             <p className="text-purple-100 mt-1 mb-0">Loan details</p>
             <p className="text-purple-50/[.6] text-sm w-10/12">
-              Lorem Ipsum es simplemente el texto de 
+              Lorem Ipsum es simplemente el texto de
             </p>
           </div>
           <div className="mt-8">
             <p className="text-purple-100 mt-1 mb-0">Completed</p>
             <p className="text-purple-50/[.6] text-sm w-10/12">
-              Lorem Ipsum es simplemente el texto de 
+              Lorem Ipsum es simplemente el texto de
             </p>
           </div>
         </div>

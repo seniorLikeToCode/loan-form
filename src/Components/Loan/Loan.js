@@ -2,13 +2,13 @@ import React from "react";
 import { MDBInput } from "mdb-react-ui-kit";
 import { Link } from "react-router-dom";
 
-const PersonalDetails = ({ setIcon }) => {
+const LoanDetails = ({ setIcon }) => {
   const handlerIcon = () => {
     setIcon((curr) => curr + 1);
   };
   return (
     <>
-      <h1 className="mb-3">Personal Details</h1>
+      <h1 className="mb-3">Loan Details</h1>
       <div className="w-1/2">
         <div className="flex gap-4 mb-3">
           <div className="w-full">
@@ -60,11 +60,11 @@ const PersonalDetails = ({ setIcon }) => {
           />
         </div>
       </div>
-      <Link to="/business" className="continueButton" onClick={handlerIcon}>
+      <Link to="/complete" className="continueButton" onClick={handlerIcon}>
         Continue
       </Link>
     </>
   );
 };
 
-export default PersonalDetails;
+export default LoanDetails;
